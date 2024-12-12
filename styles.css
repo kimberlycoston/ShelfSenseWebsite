@@ -1,0 +1,59 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            background-color: #FDFFF2;
+            color: #2C3E50;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            min-height: 80vh;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            background-color: #FDFFF2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header img {
+            width: 90%; /* Responsive width to screen size */
+            max-width: 1000px; /* Prevent the image from exceeding 1000px */
+            display: block; /* Ensures it's on its own line */
+            margin: 30vh auto 0 5vw; /* Top, Auto-Center Horizontally, Bottom, Left */
+            position: relative; /* Allows further precise positioning */
+        }
+
+        .triangle-bg {
+            position: absolute; /* Position relative to viewport */
+            bottom: 10; /* Anchor at the bottom of the viewport */
+            width: 100%; /* Full width */
+            height: 200px; /* Height of the triangle */
+            background-color: #EA5141; /* Triangle color */
+            clip-path: polygon(0 0, 100% 100%, 0 100%); /* Triangle shape */
+            z-index: -1; /* Push behind the header image */
+        }
+
+        .content p {
+            font-size: 1.3em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer {
+            text-align: center; /* Center footer content */
+            padding: 10px 0; /* Add some spacing */
+            background-color: white; /* Optional footer background */
+            font-size: 14px; /* Small footer text */
+        }
